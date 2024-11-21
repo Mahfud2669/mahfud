@@ -3,17 +3,10 @@
 const users = [
   {
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
-    name: 'User',
-    email: 'user@nextmail.com',
-    password: '123456',
-  },
-
-  {
-    id: 'b3a7e2c4-8f24-4898-9e78-69f50859c781',
     name: 'Dosen',
     email: 'dosen@nextmail.com',
     password: '123456',
-  }
+  },
 ];
 
 const customers = [
