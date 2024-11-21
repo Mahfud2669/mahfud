@@ -24,7 +24,7 @@ export default function Page() {
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Mata Kuliah Web Teknologi
             </a>
-            , Dosen Pengampu <b>Aditya Ahmad Praditya, S.Kom., M.T.I.</b>
+            , Dosen Pengampu <b>Aditya Ahmad Pradypta, S.Kom., M.T.I.</b>
           </p>
           <Link
             href="/login"
