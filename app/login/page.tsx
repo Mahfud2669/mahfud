@@ -19,24 +19,32 @@ export default function Page() {
     );
     return (
         //baris kode header
-        <main className="flex min-h-screen flex-col p-6">
-            <div className="flex h-20 shrink-e items-end rounded-lg bg-blue-500 p-4 md:h-52">
-                <Image
-                    src="/logo/uia-logo.png"
-                    width={500}
-                    height={360}
-                    className="hidden md:block"
-                    alt="Banner UIA"
-                />
+    <main className="flex min-h-screen flex-col p-6">
+            <div className="fixed top-0 left-0 w-full z-50 md:">
+                <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex h-24 items-center px-6 md">
+                    {/* Logo */}
+                    <Image
+                        src="/logo/logo.png"
+                        width={150}
+                        height={100}
+                        className="hidden md:block"
+                        alt="Banner UIA"
+                    />
+                 {/* Menu Header */}
+                <div className="ml-auto flex items-center gap-4">
+                {/* Tombol Login */}
+          </div>
+        </div>
+            <div style={{ backgroundColor: "rgb(165,207,76)", height: "6px" }}></div>
             </div>
 
             {/*baris kode form login*/}
-            <div className="flex flex-col justify-center gap-6 rounded-1g bg-gray-50 px-6 py-10 md:w-2/5 md:px-20 m-auto">
+            <div className="flex flex-col justify-center gap-6 px-6 py-10 md m-auto">
                 <form action={formAction} className="space-y-3">
-                    <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
-                        <h1 className={`${lusitana.className} mb-3 text-2xl`}>
-                            Silakan Masuk dengan akun Anda.
-                        </h1>
+                    <div className="flex-1 px-6 pb-4 pt-8">
+                        <strong className={`text-gray-800 mb-3 text-2xl`}>
+                            HARAP MASUKAN AKUN ANDA
+                        </strong>
                         <div className="w-full">
                             <div>
                                 <label
@@ -81,6 +89,9 @@ export default function Page() {
                     <Button className="mt-4 w-full" aria-disabled={isPending}>
                     Masuk <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
                     </Button>
+                    <a href="/register" className="text-gray-800 transition-colors duration-300 hover:text-blue-500 md:text-base">
+                     belum punya akun?
+                    </a>
                     <div className="flex h 8 items end space-x-1">
 
                         {errorMessage && (
