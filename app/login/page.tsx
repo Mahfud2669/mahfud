@@ -21,7 +21,7 @@ export default function Page() {
         //baris kode header
     <main className="flex min-h-screen flex-col p-6">
             <div className="fixed top-0 left-0 w-full z-50 md:">
-                <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex h-24 items-center px-6 md">
+                <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex h-24 items-center px-6 md:px-12">
                     {/* Logo */}
                     <Image
                         src="/logo/logo.png"
@@ -31,11 +31,11 @@ export default function Page() {
                         alt="Banner UIA"
                     />
                  {/* Menu Header */}
-                <div className="ml-auto flex items-center gap-4">
-                {/* Tombol Login */}
-          </div>
-        </div>
-            <div style={{ backgroundColor: "rgb(165,207,76)", height: "6px" }}></div>
+                    <div className="ml-auto flex items-center gap-4">
+                    {/* Tombol Login */}
+                    </div>
+                </div>
+                <div style={{ backgroundColor: "rgb(165,207,76)", height: "6px" }}></div>
             </div>
 
             {/*baris kode form login*/}
@@ -49,8 +49,7 @@ export default function Page() {
                             <div>
                                 <label
                                 className="mb-3 mt-5 block text-xs font-medium text-gray-900"
-                                htmlFor="email"
-                    >
+                                htmlFor="email">
                                 Email
                             </label>
                             <div className="relative">
