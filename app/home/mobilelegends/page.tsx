@@ -17,7 +17,7 @@ export default function HomePage() {
             {/* 🔹 Header */}
             <header className="fixed top-0 left-0 w-full z-50">
                 <div className="flex items-center justify-between px-6 md:px-12 py-4 bg-[rgb(10,97,96)]">
-                    <Image src="/logo/logo.png" width={150} height={100} className="w-24 md:w-40 lg:w-48 h-auto transition-all duration-300" alt="logo" />
+                <Image src="/logo/logo.png" width={100} height={70} className="w-20 md:w-32 lg:w-36 h-auto transition-all duration-300" alt="logo" />
                     <button className="md:hidden text-white" onClick={() => setMenuOpen(true)}>
                         <Bars3Icon className="w-7 h-7" />
                     </button>
@@ -26,10 +26,12 @@ export default function HomePage() {
                             <LockClosedIcon className="w-5 h-5" />
                             Login
                         </Link>
+                        {/*
                         <Link href="/register" className="flex items-center gap-2 bg-white text-sm md:text-base font-medium text-gray-800 p-2 rounded-md transition hover:bg-gray-200">
                             Buat Account
                             <ArrowRightIcon className="w-5 h-5 ml-2" />
                         </Link>
+                            */}
                     </nav>
                 </div>
                 <div className="h-1 bg-[rgb(165,207,76)]"></div>
@@ -47,9 +49,11 @@ export default function HomePage() {
                     <XMarkIcon className="w-7 h-7" />
                 </button>
                 <div className="mt-auto flex flex-col items-center gap-2 pb-10">
+                    {/*}
                     <Link href="/register" className="w-4/5 text-center py-2 bg-[rgb(10,97,96)] text-white rounded-md">
                         Buat Account
                     </Link>
+                    */}
                     <Link href="/login" className="w-4/5 text-center py-2 text-gray-800 bg-gray-300 rounded-md">
                         Login
                     </Link>

@@ -13,7 +13,7 @@ export default function PopupNo({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-5 z-50 flex justify-center items-center">
-      <div className="bg-white rounded-md p-6 w-1/3 text-center shadow-lg">
+      <div className="bg-white rounded-md p-6 w-11/12 md:w-1/3 text-center shadow-lg fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <p className="text-lg text-gray-800 mb-4">
           Mohon maaf, fitur ini sedang dalam perbaikan
         </p>
