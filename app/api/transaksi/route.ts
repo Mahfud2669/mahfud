@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { Pool } from "pg";
+import * as pg from "pg";
+const { Pool } = pg;
 
 // Konfigurasi PostgreSQL di Vercel
 const pool = new Pool({
