@@ -77,27 +77,21 @@ export default function HomePage() {
     return (
         <main className="flex flex-col items-center min-h-screen bg-[rgb(232,246,244)]">
             {/* 🔹 Header */}
-            <header className="fixed top-0 left-0 w-full z-50">
-                <div className="flex items-center justify-between px-6 md:px-12 py-4 bg-[rgb(10,97,96)]">
-                <Image src="/logo/logo.png" width={100} height={70} className="w-20 md:w-32 lg:w-36 h-auto transition-all duration-300" alt="logo" />
+            <div className="fixed top-0 left-0 w-full z-50">
+                <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex items-center justify-between px-4 md:px-12 py-5 md:py-6 h-24 md:h-28 transition-all duration-300">
+                    <Image src="/logo/logo.PNG" width={80} height={50} className="w-14 md:w-16 lg:w-18 h-auto object-contain transition-all duration-300" alt="logo" />
                     <button className="md:hidden text-white" onClick={() => setMenuOpen(true)}>
-                        <Bars3Icon className="w-7 h-7" />
+                        <Bars3Icon className="w-6 h-6 md:w-7 md:h-7" />
                     </button>
-                    <nav className="hidden md:flex items-center gap-2">
+                    <div className="hidden md:flex items-center gap-4">
                         <Link href="/login" className="flex items-center gap-2 text-white text-sm md:text-base font-medium transition hover:text-gray-300">
                             <LockClosedIcon className="w-5 h-5" />
                             Login
                         </Link>
-                        {/*
-                        <Link href="/register" className="flex items-center gap-2 bg-white text-sm md:text-base font-medium text-gray-800 p-2 rounded-md transition hover:bg-gray-200">
-                            Buat Account
-                            <ArrowRightIcon className="w-5 h-5 ml-2" />
-                        </Link>
-                            */}
-                    </nav>
+                    </div>
                 </div>
-                <div className="h-1 bg-[rgb(165,207,76)]"></div>
-            </header>
+                <div style={{ backgroundColor: "rgb(165,207,76)", height: "6px" }}></div>
+            </div>
 
             {/* 🔹 Sidebar */}
             {menuOpen && (
@@ -123,11 +117,12 @@ export default function HomePage() {
             </aside>
 
             {/* 🔹 Banner */}
-            <section className="relative w-full h-[50vh] md:h-[65vh] bg-[url('/banner/mlbanner.jpg')] bg-cover bg-center bg-no-repeat mt-[70px] md:mt-[85px] flex flex-col justify-end items-start pt-10 px-6 md:px-10 bg-black bg-opacity-70 text-left">
-                <Image src="/game/ml.png" width={150} height={150} className="w-28 md:w-40 h-auto mb-2 rounded-md mt-4 md:mt-6 transition-all duration-300" alt="ML Icon" />
-                <h1 className="text-2xl md:text-5xl font-bold text-white">MOBILE LEGENDS: BANG BANG</h1>
-                <p className="text-sm md:text-lg text-gray-300 mb-6">MOONTON</p>
+            <section className="relative w-full h-[50vh] md:h-[65vh] bg-[url('/banner/mlbanner.jpg')] bg-cover bg-center bg-no-repeat mt-[100px] md:mt-[110px] flex flex-col justify-end items-start pt-10 px-6 md:px-10 bg-black bg-opacity-70 text-left">
+                <Image src="/game/ml.png" width={120} height={120} className="w-24 md:w-40 h-auto mb-2 rounded-md mt-4 md:mt-6 transition-all duration-300" alt="ML Icon" />
+                <h1 className="text-xl md:text-5xl font-bold text-white">MOBILE LEGENDS: BANG BANG</h1>
+                <p className="text-xs md:text-lg text-gray-300 mb-6">MOONTON</p>
             </section>
+
 
             {/* 🔹 Content */}
             <section className="flex flex-col md:flex-row justify-center py-6 w-full gap-8 px-4">
