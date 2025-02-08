@@ -12,10 +12,10 @@ export default function Page() {
 
   return (
     <main style={{ backgroundColor: "rgb(232,246,244)" }}>
-      {/* Navbar */}
+      {/* Header */}
       <div className="fixed top-0 left-0 w-full z-50">
         <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex items-center justify-between px-6 md:px-12 py-4">
-        <Image src="/logo/logo.png" width={100} height={70} className="w-20 md:w-32 lg:w-36 h-auto transition-all duration-300" alt="logo" />
+        <Image src="/logo/logo.PNG" width={100} height={70} className="w-20 md:w-20 lg:w-20 h-auto transition-all duration-300" alt="logo" />
           <button className="md:hidden text-white" onClick={() => setMenuOpen(true)}>
             <Bars3Icon className="w-7 h-7" />
           </button>
@@ -66,7 +66,7 @@ export default function Page() {
           </p>
 
           {/* Container Game */}
-          <div className="mt-6 bg-gray-100 p-6 rounded-lg mt-8">
+          <div className="mt-6 bg-gray-200 p-6 shadow-lg rounded-lg mt-8 ">
             <div className="grid grid-cols-5 gap-4 justify-center">
               <Link href="/home/mobilelegends">
                 <Image src="/game/ml.png" width={150} height={150} alt="Mobile Legends" className="cursor-pointer rounded-md transition-transform transform hover:scale-110" />
@@ -124,6 +124,17 @@ export default function Page() {
               <Link href="/home7">
                 <Image src="/game/COD.jpg" width={150} height={150} alt="Call of Duty" className="cursor-pointer rounded-md transition-transform transform hover:scale-110" />
               </Link>*/}
+            </div>
+          </div>
+
+          <div className="mt-6 bg-gray-200 p-6 shadow-lg rounded-lg mt-8">
+            <div className="grid grid-1 gap-4 justify-center">
+              <p>Kelompok 2</p>
+              <p>Mahfud Muhyiddin</p>
+              <p>Rian Wibowo</p>
+              <p>Raihan Fajarahmatan</p>
+              <p>Muhammad Amar</p>
+              <p>Mochammad Shohibul Burhan</p>
             </div>
           </div>
         </div>

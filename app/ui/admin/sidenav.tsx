@@ -7,16 +7,14 @@ export default function SideNav() {
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
       <Link
-        className="mb-2 flex h-20 md:h-40 items-center justify-center rounded-md p-4"
+        className="mb-2 flex h-16 md:h-40 items-center justify-center rounded-md p-4"
         href="/"
         style={{ backgroundColor: "rgb(10,97,96)" }} // Warna background
       >
-        <div className="w-32 md:w-40 flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <img
             src="/logo/logo.png"
-            width={300}
-            height={160}
-            className="block"
+            className="max-w-[60px] md:max-w-[120px] h-[40px] md:h-auto object-contain" // Ukuran lebih kecil di mobile
             alt="Banner UIA"
           />
         </div>

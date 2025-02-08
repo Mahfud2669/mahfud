@@ -20,23 +20,13 @@ export default function Page() {
     return (
         //baris kode header
     <main className="flex min-h-screen flex-col p-6">
-            <div className="fixed top-0 left-0 w-full z-50 md:">
-                <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex h-24 items-center px-6 md:px-12">
-                    {/* Logo */}
-                    <Image
-                        src="/logo/logo.png"
-                        width={150}
-                        height={100}
-                        className="hidden md:block"
-                        alt="Banner UIA"
-                    />
-                 {/* Menu Header */}
-                    <div className="ml-auto flex items-center gap-4">
-                    {/* Tombol Login */}
-                    </div>
-                </div>
-                <div style={{ backgroundColor: "rgb(165,207,76)", height: "6px" }}></div>
+        {/* Header */}
+        <div className="fixed top-0 left-0 w-full z-50">
+            <div style={{ backgroundColor: "rgb(10,97,96)" }} className="flex items-center justify-between px-6 md:px-12 py-4">
+                <Image src="/logo/logo.PNG" width={100} height={70} className="w-20 md:w-20 lg:w-20 h-auto transition-all duration-300" alt="logo" />
             </div>
+            <div style={{ backgroundColor: "rgb(165,207,76)", height: "6px" }}></div>
+        </div>
 
             {/*baris kode form login*/}
             <div className="flex flex-col justify-center gap-6 px-6 py-10 md m-auto">
